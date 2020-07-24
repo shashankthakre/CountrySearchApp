@@ -19,5 +19,8 @@ public interface ApiInterface {
 
     @GET
     Call<List<Countries>> getAllCountryDetail(@Url String url);
+
+
+    //////
 }
 
