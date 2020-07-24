@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/border_dark">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/countyFlag_IV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/flag" />
+
+
+        <TextView
+            android:id="@+id/tv_role_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/countyFlag_IV"
+            android:fontFamily="@font/regular"
+            android:text="Country Name"
+            android:textColor="#465155"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/countryName_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_role_value"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/countyFlag_IV"
+            android:fontFamily="@font/medium"
+            android:text="India"
+            android:textAlignment="center"
+            android:textColor="#5333FF"
+            android:textSize="14dp"
+         />
+
+
+        <TextView
+            android:id="@+id/tv_role_value1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toRightOf="@+id/tv_role_value"
+            android:fontFamily="@font/regular"
+            android:text="Capital Name"
+            android:textAlignment="textEnd"
+            android:textColor="#465155"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/capital_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_role_value1"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/countryName_TV"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/regular"
+            android:text="New Delhi"
+            android:textAlignment="viewEnd"
+            android:textColor="#5333FF"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:id="@+id/view_line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/capital_TV"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:visibility="gone"
+            android:background="#CAC8C8" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/currencies_TV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--------------   Country Currencies   -------------- "
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/view_line1"
+                android:layout_centerInParent="true"
+                android:textColor="#465155"
+                android:textSize="12dp"
+                android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/currencies_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/extrabold"
+            android:text="Currencies : "
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/currencies_TV2"
+            android:layout_centerInParent="true"
+            android:textColor="#3D9A42"
+            android:textSize="13dp"
+        />
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>
