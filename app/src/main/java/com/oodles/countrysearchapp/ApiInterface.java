@@ -17,8 +17,6 @@ public interface ApiInterface {
            @Url String url
     );
 
-
-
     @GET
     Call<List<Countries>> getAllCountryDetail(@Url String url);
 }
